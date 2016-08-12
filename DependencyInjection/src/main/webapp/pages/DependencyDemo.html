@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>DependencyInjection</title>
+
+<script type="text/javascript" src="../script/angular.min.js"></script>
+<script type="text/javascript" src="../script/appConfig.js"></script>
+<script type="text/javascript" src="../script/appCtrl.js"></script>
+
+
+</head>
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+		<h1>{{greet}}</h1>
+	</div>
+	<div ng-controller="concatenation">
+	<input type="text" ng-model="firstname" name="firstname" value="firstname"/>
+	<input type="text" ng-model="lastname" name="lastname" value="lastname"/>
+	<input type="button" ng-model="concat" value="concat" ng-click="concat()"/>
+	
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="../script/angular.min.js"></script>
+<script type="text/javascript" src="../script/appConfig.js"></script>
+<script type="text/javascript" src="../script/appCtrl.js"></script>
+
+</head>
+<body ng-app="myApp">
+	<div ng-controller="myCtrl">
+		
+
+	
+	<form name="empForm">
+	<h3 align="center">Product Details</h3>
+		<table style="margin-left: 400px; border: 1px solid;">
+			<tr>
+				<td>Id:</td>
+				<td><input type="text" size="20" ng-model="Id" name="id">
+			</tr>
+			<tr>
+				<td>ProductName:</td>
+				<td><input type="text" size="20" ng-model="ProductName" name="productname">
+			</tr>
+			<tr>
+				<td>Quantity:</td>
+				<td><input type="text" size="20" ng-model="Quantity" name="quantity">
+			</tr>
+			
+			<tr>
+				<td>Price:</td>
+				<td><input type="text" size="20" ng-model="Price" name="price">
+			</tr>
+			<tr>
+			 
+			 <tr>
+					<button ng-click="myFunc()">calculate</button>
+	
+			</tr>
+			
+					
+		</table>
+</form>
+	<div ng-show="showMe">
+	<h3>Hello! {{Id}}, {{ProductName}}. {{Quantity}} </h3>
+	<h3>Price: {{Price}}</h3>
+	<h2>Hey! payable Amount {{Price*Quantity}}</h2>
+</div>
+
+
+</body>
+</html>
