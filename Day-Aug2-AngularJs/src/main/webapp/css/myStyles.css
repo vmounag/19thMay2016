@@ -1,0 +1,46 @@
+@CHARSET "ISO-8859-1";
+body a{
+	color:black;
+	text-decoration: none;
+	
+}
+
+#footCnt{
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	width:700px;
+	border: 1px solid black;
+}
+
+#mainCnt{
+	width:660px;
+	height:500px;
+	border: 1px solid black;
+	padding: 20px 20px 20px 20px;
+}
+
+#headCnt{
+	width:700px;
+	border: 1px solid black;
+	
+}
+
+#headCnt a{
+	text-decoration: none;
+}
+
+#filmLnk{
+	width:700px;
+	height: 30px;
+	background-color: black;
+	color:white;
+}
+
+#filmLnk a{
+	color:white;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 30px;
+	padding-top: 5px;
+}

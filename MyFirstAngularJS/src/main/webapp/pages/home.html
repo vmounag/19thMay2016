@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="../script/angular.min.js"></script>
+<script type="text/javascript" src="../script/appConfig.js"></script>
+<script type="text/javascript" src="../script/appCtrl.js"></script>
+
+
+</head>
+<body>
+
+<body ng-app="myApp">
+	<div ng-controller="myCtrl">
+		
+		<form name="ProductDetails">
+	<h3 align="center">Product Details</h3>
+		<table style="margin-left: 400px; border: 1px solid;">
+			<tr>
+				<td>Product ID:</td>
+				<td><input type="text" size="20" ng-model="productID" name="productID">
+			</tr>
+			<tr>
+				<td>Product Name:</td>
+				<td><input type="text" size="20" ng-model="productName" name="productName">
+			</tr>
+			<tr>
+				<td>Quantity:</td>
+				<td><input type="text" size="20" ng-model="quantity" name="quantity">
+			</tr>
+			
+			<tr>
+				<td>Price:</td>
+				<td><input type="text" size="20" ng-model="Price" name="Price">
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					
+					<!-- <button type="button" ng-click="doClick()">Save</button>
+  					  <button type="submit">submit</button> -->
+  					  
+  					  <!-- <input type="submit" ngClick="Submit" > -->
+  					  
+  					  
+  					  <button ng-click="myFunc()">Submit</button>
+  					  
+  					  
+				</td>
+			</tr>
+			
+		</table>
+	</form>
+	
+	
+	<div ng-show="showMe">
+	<h4>Hello customer! {{productID}}, {{productName}} , {{quantity}},  Price: {{Price}} </h4>
+	<h4>Payable Amount : {{Price}}</h4>
+	<h4>Please pay: {{Price*quantity}}</h4>
+	</div>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+
+</body>
+</html>

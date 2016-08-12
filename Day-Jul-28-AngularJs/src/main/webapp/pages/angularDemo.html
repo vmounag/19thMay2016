@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="../script/angular.min.js"></script>
+<script type="text/javascript" src="../script/appConfig.js"></script>
+<script type="text/javascript" src="../script/appCtrl.js"></script>
+
+</head>
+<body ng-app="myApp">
+	<div ng-controller="myCtrl">
+		<h1>{{msg}}</h1>
+	</div>
+
+	<div ng-controller="helloCtrl">
+		<h3>{{greetings}}</h3>
+	<form name="empForm">
+	<h3 align="center">Employee Details</h3>
+		<table style="margin-left: 400px; border: 1px solid;">
+			<tr>
+				<td>FirstName:</td>
+				<td><input type="text" size="20" ng-model="firstName" name="fname">
+			</tr>
+			<tr>
+				<td>LastName:</td>
+				<td><input type="text" size="20" ng-model="lastName" name="lname">
+			</tr>
+			<tr>
+				<td>Age:</td>
+				<td><input type="text" size="20" ng-model="age" name="age">
+			</tr>
+			
+			<tr>
+				<td>Salary:</td>
+				<td><input type="text" size="20" ng-model="salary" name="salary">
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" name="Save" value="Save">
+				</td>
+			</tr>
+			
+		</table>
+	</form>
+	
+	<h3>Hello! {{firstName}}, {{lastName}}. Your Age : {{age}} </h3>
+	<h3>Salary : {{salary}}</h3>
+	<h2>Hey! Your Bonus: {{salary*0.30}}</h2>
+</div>
+
+
+</body>
+</html>

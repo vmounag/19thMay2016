@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Title</title>
+<script type="text/javascript" src="../script/angular.min.js"></script>
+<script type="text/javascript" src="../script/appConfig.js"></script>
+
+</head>
+<body ng-app="myApp">
+<!-- <div ng-controller="filmCreateCtrl"> -->
+<form>
+<h3>{{heading}}</h3>
+
+<table>
+	<tr>
+		<td>Film Title:</td>
+		<td>
+			<input type="text" name="fTitle" size="20">
+		</td>
+	</tr>
+	<tr>
+		<td>Film Description:</td>
+		<td>
+			<input type="text" name="fdesc" size="20">
+		</td>
+	</tr>
+	<tr>
+		<td>Release year:</td>
+		<td>
+			<input type="date" name="releaseyear" size="20">
+		</td>
+	</tr>
+	<tr>
+		<td>Rental Duration:</td>
+		<td>
+			<input type="date" name="rentalDuration" size="20">
+		</td>
+	</tr>
+	<tr>
+		<td>Length:</td>
+		<td>
+			<input type="text" name="length" size="20">
+		</td>
+	</tr>
+	<tr>
+		<td>Replacement Cost:</td>
+		<td>
+			<input type="text" name="cost" size="20">
+		</td>
+	</tr>
+	<tr>
+		<td>Ratings:</td>
+		<td>
+			<input type="text" name="ratings" size="20">
+		</td>
+	</tr>
+	<tr>
+		<td>Language:</td>
+		<td>
+				<select name="language">
+					<option value="English">English</option> 
+					<option value="Tamil">Tamil</option> 
+					<option value="Hindi">Hindi</option> 
+					<option value="Telugu">Telugu</option> 
+				</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Category:</td>
+		<td>
+				<select name="category">
+					<option value="Horre">Horre</option> 
+					<option value="Romance">Romance</option> 
+					<option value="Comedy">Comedy</option> 
+					
+				</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Actor:</td>
+		<td>
+				<select name="actor" multiple="multiple">
+					<option value="actor1">actor1</option> 
+					<option value="tom">Tom</option> 
+					<option value="jerry">jerry</option> 
+					
+				</select>
+		</td>
+	</tr>
+	
+	<tr>
+		<td></td>
+		<td>
+			<input type="submit" value="Save" name="Save">
+		</td>
+		
+	</tr>
+	
+
+</table>
+
+</form>
+<!-- </div> -->
+</body>
+</html>

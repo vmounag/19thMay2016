@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Film Management System</title>
+<link href="../css/myStyles.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="../script/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<script type="text/javascript" src="../script/appConfig.js"></script>
+
+</head>
+<body ng-app="myApp">
+<div id="headCnt">
+
+<h1 align="center">Film Management System</h1>
+
+<div id="filmLnk">
+
+	<a href="#/create">Create</a>
+	<a href="#/update">Update</a>
+	<a href="#/delete">Delete</a>
+	<a href="#/listall">ListAll</a>
+	<a href="#/search">Search</a>
+	<a href="#/logout">LogOut</a>
+			
+</div>
+</div>
+<div  ng-view  id="mainCnt" >
+
+</div>
+
+<div id="footCnt">
+<div style="float: left; margin-right: 500px;">Copy &copy; Right</div>
+<div>Capgemini FLP Batch</div>
+</div>
+
+
+</body>
+</html>

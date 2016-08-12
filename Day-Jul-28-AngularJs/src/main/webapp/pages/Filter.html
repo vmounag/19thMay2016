@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="../script/angular.min.js"></script>
+<script type="text/javascript" src="../script/appConfig.js"></script>
+<script type="text/javascript" src="../script/appFilter.js"></script>
+
+</head>
+<body ng-app="myApp">
+<div ng-controller="fCtrl">
+
+	<!-- <h1>{{firstName | uppercase}}</h1>
+	<h1>{{firstName | lowercase}}</h1> -->
+	
+	Enter Your Character: 
+	<input type="text" name="filterText" ng-model="filtertxt" size="20">
+	
+	<!--  <ul>
+		<li ng-repeat="userName in names | filter: filtertxt ">
+		{{userName}}
+		</li>
+	
+	</ul>
+	-->
+	
+	
+	<table>
+		<tr>
+			<th>PersonId</th>
+			<th>FirstName</th>
+			<th>lastName</th>
+			<th>MobileNum</th>
+			<th>city</th>
+		</tr>
+		<tr ng-repeat="per in persons|orderBy:'perId'">
+			<td>{{per.perId}}</td>
+			<td>{{per.firstName}}</td>
+			<td>{{per.lastname}}</td>
+			<td>{{per.mobilenum}}</td>
+			
+			<td>{{per.city}}</td>
+		</tr>
+	
+	</table>
+	
+	
+	
+
+</div>
+
+</body>
+</html>
